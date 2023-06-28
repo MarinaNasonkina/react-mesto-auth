@@ -1,0 +1,19 @@
+.popup__container_for_info-tooltip {
+  align-items: center;
+  gap: 32px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 430px;
+  padding: 60px 36px 60px;
+  background: var(--light);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, .15);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 618px) {
+  .popup__container_for_info-tooltip {
+    gap: 40px;
+    max-width: 280px;
+    padding: 50px 18px 50px;
+  }
+}

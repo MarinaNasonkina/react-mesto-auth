@@ -1,0 +1,20 @@
+.header__sign-out {
+  padding: 7px 0;
+  color: var(--sign-out);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 22px;
+  transition: color .4s;
+}
+
+@media (any-hover: hover) {
+  .header__sign-out:hover {
+    color: var(--light);
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .header__sign-out {
+    padding: 6px 0;
+  }
+}

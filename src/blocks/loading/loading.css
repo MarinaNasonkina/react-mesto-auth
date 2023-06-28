@@ -1,0 +1,20 @@
+@keyframes loading {
+  from {
+    content: '...';
+  }
+  33% {
+    content: '.';
+  }
+  66% {
+    content: '..';
+  }
+  to {
+    content: '...';
+  }
+}
+
+.loading::after {
+  display: inline-block;
+  content: '...';
+  animation: loading step-end 1.5s infinite;
+}

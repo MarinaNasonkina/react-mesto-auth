@@ -1,0 +1,10 @@
+:root {
+  --dark: #000;
+  --light: #fff;
+  --header-border: rgba(84, 84, 84, .7);
+  --sign-out: #a9a9a9;
+  --footer: #545454;
+  --placeholder: #c4c4c4;
+  --field-sign-in: #ccc;
+  --error: #f00;
+}

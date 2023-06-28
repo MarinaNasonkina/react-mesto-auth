@@ -1,0 +1,16 @@
+.sign-in__field {
+  border: none;
+  padding: 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--field-sign-in);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.sign-in__field::placeholder {
+  color: var(--field-sign-in);
+}

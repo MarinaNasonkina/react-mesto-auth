@@ -1,0 +1,18 @@
+.profile__description {
+  max-width: 336px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  row-gap: 9px;
+  column-gap: 19px;
+}
+
+@media screen and (max-width: 703px) {
+  .profile__description {
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 7px;
+  }
+}

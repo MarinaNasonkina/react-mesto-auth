@@ -1,0 +1,37 @@
+.header__button::before {
+  content: '';
+  margin-top: -9px;
+}
+
+.header__button::after {
+  content: '';
+  margin-top: 9px;
+}
+
+.header__button,
+.header__button::before,
+.header__button::after {
+  display: block;
+  position: absolute;
+  background-color: var(--light);
+  height: 3px;
+  width: 24px;
+  transition: transform .6s;
+}
+
+.header__menu-toggle:checked + .header__button-container .header__button::before {
+  margin-top: 0px;
+  width: 25px;
+  transform: rotate(405deg);
+}
+
+.header__menu-toggle:checked + .header__button-container .header__button {
+  background: var(--dark);
+  width: 20px;
+}
+
+.header__menu-toggle:checked + .header__button-container .header__button::after {
+  margin-top: 0px;
+  width: 25px;
+  transform: rotate(-405deg);
+}

@@ -1,0 +1,29 @@
+.sign-in__submit-button {
+  margin-top: 186px;
+  border-radius: 2px;
+  border: none;
+  padding: 14px 0;
+  cursor: pointer;
+  background-color: var(--light);
+  color: var(--dark);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  opacity: 1;
+  transition: opacity .4s;
+}
+
+@media (any-hover: hover) {
+  .sign-in__submit-button:hover {
+    opacity: .8;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .sign-in__submit-button {
+    margin-top: 143px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

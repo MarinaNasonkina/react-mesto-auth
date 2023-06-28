@@ -1,0 +1,17 @@
+.sign-in__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--light);
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 618px) {
+  .sign-in__title {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 42px;
+  }
+}

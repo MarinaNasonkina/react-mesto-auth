@@ -1,0 +1,28 @@
+.profile__avatar-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  border: none;
+  padding: 0;
+  background: rgba(0, 0, 0, .8) url('../../../images/buttons/edit.svg') center
+    no-repeat;
+  background-size: 26px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .4s;
+}
+
+@media (any-hover: hover) {
+  .profile__avatar-button:hover {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 703px) {
+  .profile__avatar-button {
+    margin: 0 auto;
+    right: 0;
+  }
+}

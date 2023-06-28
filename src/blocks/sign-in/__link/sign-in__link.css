@@ -1,0 +1,22 @@
+.sign-in__link {
+  padding-top: 15px;
+  text-decoration: none;
+  color: var(--light);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  transition: opacity .4s;
+}
+
+@media (any-hover: hover) {
+  .sign-in__link:hover {
+    opacity: .6;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .sign-in__link {
+    padding-top: 20px;
+  }
+}
