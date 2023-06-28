@@ -57,10 +57,15 @@ export default function App() {
     if (localStorage.getItem('jwt')) {
       const jwt = localStorage.getItem('jwt');
 
-      auth.checkToken(jwt).then(({ data }) => {
-        handleLogin(data.email);
-        navigate('/', { replace: true });
-      });
+      auth
+        .checkToken(jwt)
+        .then(({ data }) => {
+          handleLogin(data.email);
+          navigate('/', { replace: true });
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     }
   }
 

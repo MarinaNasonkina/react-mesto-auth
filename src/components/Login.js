@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
+import AuthForm from './AuthForm';
+
 import useFormValidator from '../utils/useFormValidator';
 import * as auth from '../utils/auth';
 
@@ -29,39 +31,15 @@ export default function Login({ onLogin }) {
     <main className='content'>
       <section className='sign-in'>
         <h2 className='sign-in__title'>Вход</h2>
-        <form
-          method='post'
-          name='sign-in'
-          className='sign-in__form'
-          onSubmit={handleSubmit}
-          noValidate
-        >
-          <input 
-            className={`sign-in__field ${errors.email && 'sign-in__field_invalid'}`}
-            placeholder='Email'
-            name='email'
-            type='email'
-            maxLength='40'
-            value={email || ''}
-            onChange={handleChange}
-            required
-          />
-          <span className='sign-in__input-error'>{errors.email}</span>
-          <input
-            className={`sign-in__field ${errors.password && 'sign-in__field_invalid'}`}
-            placeholder='Пароль'
-            name='password'
-            type='password'
-            maxLength='40'
-            value={password || ''}
-            onChange={handleChange}
-            required
-          />
-          <span className='sign-in__input-error'>{errors.password}</span>
-          <button type='submit' className='sign-in__submit-button'>
-            Войти
-          </button>
-        </form>
+        <AuthForm
+          formName='sign-in'
+          handleSubmit={handleSubmit}
+          handleChange={handleChange}
+          errors={errors}
+          email={email}
+          password={password}
+          submitText='Войти'
+        />
       </section>
     </main>
   );
